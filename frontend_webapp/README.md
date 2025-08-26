@@ -1,54 +1,35 @@
-# Remotion video
+# Note & Video Manager (Remotion-based)
 
-<p align="center">
-  <a href="https://github.com/remotion-dev/logo">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/remotion-dev/logo/raw/main/animated-logo-banner-dark.gif">
-      <img alt="Animated Remotion Logo" src="https://github.com/remotion-dev/logo/raw/main/animated-logo-banner-light.gif">
-    </picture>
-  </a>
-</p>
+A modern, minimalistic, light-themed web application to create, edit, search, and organize notes with attached video playback. Built on Remotion to run in the browser via the Remotion Studio dev server. Data persists locally in the browser using localStorage.
 
-Welcome to your Remotion project!
+## Features
+- Create and edit text notes
+- Attach and playback videos in notes (URL or file upload)
+- List and organize notes in a sidebar with sorting
+- Search notes by title and content
+- Delete (move to trash) and restore notes; permanently delete from trash
+- Light theme with primary, secondary, and accent colors
 
-## Commands
+## Tech
+- Remotion 4
+- React 19
+- TypeScript
 
-**Install Dependencies**
+## Getting Started
 
+Install dependencies:
 ```console
 npm i
 ```
 
-**Start Preview**
-
+Start the Remotion Studio (development server):
 ```console
 npm run dev
 ```
 
-**Render video**
+In the Remotion Studio UI, select the "NotesApp" composition to open the application UI.
 
-```console
-npx remotion render
-```
-
-**Upgrade Remotion**
-
-```console
-npx remotion upgrade
-```
-
-## Docs
-
-Get started with Remotion by reading the [fundamentals page](https://www.remotion.dev/docs/the-fundamentals).
-
-## Help
-
-We provide help on our [Discord server](https://discord.gg/6VzzNDwUwV).
-
-## Issues
-
-Found an issue with Remotion? [File an issue here](https://github.com/remotion-dev/remotion/issues/new).
-
-## License
-
-Note that for some entities a company license is needed. [Read the terms here](https://github.com/remotion-dev/remotion/blob/main/LICENSE.md).
+## Notes
+- All data is stored in localStorage and stays in the browser.
+- File uploads are played from a generated blob URL for the current session.
+- No backend is required.
